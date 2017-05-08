@@ -16,6 +16,6 @@ dist=$(cat /etc/os-release |grep ID_LIKE|cut -d= -f2|sed 's/"//g')
 if [ "$dist" = "suse" ]; then
 	export PS1="$suse$os $version:$gray\w$\n$reset> "
 else
-	export PS1="$debian$os $version:$blue\w$\n$reset> 
+	export PS1="$debian$os $version:$gray\w$\n$reset> 
 fi
 
